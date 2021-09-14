@@ -9,7 +9,6 @@ before:
 builds:
   -
     id: "go-hello-world"
-    binary: go-hello-world
     goos:
       - linux
     goarch:
