@@ -9,6 +9,7 @@ before:
 builds:
   -
     id: "go-hello-world"
+    dir: cmd
     goos:
       - linux
     goarch:
