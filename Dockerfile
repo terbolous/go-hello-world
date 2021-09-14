@@ -1,4 +1,4 @@
 FROM scratch
 
-COPY mg /usr/bin/
-ENTRYPOINT ["/usr/bin/mg"]
+COPY go-hello-world /usr/bin/
+ENTRYPOINT ["/usr/bin/go-hello-world"]

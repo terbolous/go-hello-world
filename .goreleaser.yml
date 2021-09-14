@@ -8,9 +8,9 @@ before:
     - env
 builds:
   -
-    id: "mg"
-    dir: mg
-    binary: mg
+    id: "go-hello-world"
+    dir: go-hello-world
+    binary: go-hello-world
     goos:
       - linux
     goarch:
