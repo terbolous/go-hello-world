@@ -1,6 +1,6 @@
 # This is an example .goreleaser.yml file with some sane defaults.
 # Make sure to check the documentation at http://goreleaser.com
-project_name: metaGraf
+project_name: go-hello-world
 
 before:
   hooks:
@@ -8,11 +8,11 @@ before:
     - env
 builds:
   -
-    id: "mg-darwin"
+    id: "mg"
     dir: mg
     binary: mg
     goos:
-      - darwin
+      - linux
     goarch:
       - amd64
 
@@ -21,8 +21,8 @@ dockers:
     goos: linux
     goarch: amd64
     image_templates:
-      - "ghcr.io/terbolous/mg:latest"
-      - "ghcr.io/terbolous/mg:{{.Version}}"
+      - "ghcr.io/terbolous/go-hello-world:latest"
+      - "ghcr.io/terbolous/go-hello-world:{{.Version}}"
     dockerfile: Dockerfile
     use: buildx
     skip_push: false
