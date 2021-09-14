@@ -5,9 +5,6 @@ project_name: metaGraf
 before:
   hooks:
     # You may remove this if you don't use go modules.
-    - go mod tidy
-    - go vet -v ./...
-    - go test ./...
     - env
 builds:
   -
