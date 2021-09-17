@@ -7,7 +7,7 @@ before:
     # You may remove this if you don't use go modules.
     - env
 env:
-  - MG_GITHUB_OWNER={{ if index .Env "MG_GITHUB_OWNER" }}{{ .Env.MG_GITHUB_OWNER }}{{ else }}"foobar"{{ endif }}
+  - MG_GITHUB_OWNER="{{ if index .Env "MG_GITHUB_OWNER" }}{{ .Env.MG_GITHUB_OWNER }}{{ else }}foobar{{ endif }}""
 builds:
   -
     id: "go-hello-world"
