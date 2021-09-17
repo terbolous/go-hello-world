@@ -22,8 +22,8 @@ dockers:
     goos: linux
     goarch: amd64
     image_templates:
-      - "ghcr.io/{{ .Env.MG_GITHUB_OWNER }}/go-hello-world:latest"
-      - "ghcr.io/{{ .Env.MG_GITHUB_OWNER }}/go-hello-world:{{.Version}}"
+      - "ghcr.io/{{.Env.MG_GITHUB_OWNER}}/go-hello-world:latest"
+      - "ghcr.io/{{.Env.MG_GITHUB_OWNER}}/go-hello-world:{{.Version}}"
     dockerfile: Dockerfile
     use: buildx
     skip_push: false
