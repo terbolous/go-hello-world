@@ -6,11 +6,6 @@ before:
   hooks:
     # You may remove this if you don't use go modules.
     - env
-env:
-#  - MG_GITHUB_OWNER="terbolous"
-#  - MG_GITHUB_OWNER={{ if index .Env "MG_GITHUB_OWNER"}}foo{{ end }}
-#  - MG_GITHUB_OWNER={{ if index .Env "MG_GITHUB_OWNER"}}{{ .Env.MG_GITHUB_OWNER }}{{ end }}
-#  - MG_GITHUB_OWNER="{{ if index .Env "MG_GITHUB_OWNER" }}{{ .Env.MG_GITHUB_OWNER }}{{ else }}foobar{{ end }}"
 builds:
   -
     id: "go-hello-world"
